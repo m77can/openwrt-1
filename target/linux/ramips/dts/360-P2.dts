@@ -7,7 +7,7 @@
 
 / {
 	compatible = "zero,360-p2", "mediatek,mt7628an-soc";
-	model = "ZERO 360 P2";
+	model = "ZERO 360-P2";
 
 	aliases {
 		led-boot = &led_system;
@@ -32,6 +32,10 @@
 			label = "360-p2:blue:system";
 			gpios = <&gpio1 5 GPIO_ACTIVE_LOW>;
 		};
+		internet {
+			label = "360-p2:blue:internet";
+			gpios = <&gpio0 1 GPIO_ACTIVE_LOW>;
+		};
 		wlan2g {
 			label = "360-p2:blue:wlan2g";
 			gpios = <&gpio1 12 GPIO_ACTIVE_LOW>;
@@ -48,7 +52,7 @@
 		};
 		power {
 			label = "360-p2:blue:power";
-			gpios = <&gpio0 0 GPIO_ACTIVE_LOW>;
+			gpios = <&gpio0 11 GPIO_ACTIVE_LOW>;
 		};
 		
 	};
