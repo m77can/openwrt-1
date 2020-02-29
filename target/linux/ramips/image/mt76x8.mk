@@ -490,6 +490,6 @@ define Device/360-p2
   DTS := 360-P2
   IMAGE_SIZE := $(ralink_default_fw_size_16M)
   DEVICE_TITLE := ZREO 360-P2
-  DEVICE_PACKAGES := kmod-usb2 kmod-usb-ohci uboot-envtools kmod-usb-ledtrig-usbport
+  DEVICE_PACKAGES :=  kmod-mt76x2 kmod-usb2 kmod-usb-ohci uboot-envtools kmod-usb-ledtrig-usbport
 endef
 TARGET_DEVICES += 360-p2
