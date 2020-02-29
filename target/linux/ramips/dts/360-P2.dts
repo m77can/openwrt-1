@@ -32,6 +32,10 @@
 			label = "360-p2:blue:system";
 			gpios = <&gpio1 5 GPIO_ACTIVE_LOW>;
 		};
+		wlan2g {
+			label = "360-p2:blue:wlan2g";
+			gpios = <&gpio1 12 GPIO_ACTIVE_HIGH>;
+		};
 		usb {
 			label = "360-p2:blue:usb";
 			gpios = <&gpio1 14 GPIO_ACTIVE_LOW>;
@@ -142,7 +146,7 @@
 		reg = <0x0000 0 0 0 0>;
 		mediatek,mtd-eeprom = <&factory 0x8000>;
 		ieee80211-freq-limit = <5000000 6000000>;
-		
+
 		led {
 			led-sources = <2>;
 			led-active-low;
