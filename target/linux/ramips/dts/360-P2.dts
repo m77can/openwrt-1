@@ -32,10 +32,6 @@
 			label = "360-p2:blue:system";
 			gpios = <&gpio1 5 GPIO_ACTIVE_LOW>;
 		};
-		internet {
-			label = "360-p2:blue:internet";
-			gpios = <&gpio0 1 GPIO_ACTIVE_LOW>;
-		};
 		wlan2g {
 			label = "360-p2:blue:wlan2g";
 			gpios = <&gpio1 12 GPIO_ACTIVE_LOW>;
@@ -52,7 +48,7 @@
 		};
 		power {
 			label = "360-p2:blue:power";
-			gpios = <&gpio0 11 GPIO_ACTIVE_LOW>;
+			gpios = <&gpio0 11 GPIO_ACTIVE_HIGH>;
 		};
 		
 	};
@@ -144,20 +140,17 @@
 	status = "okay";
 };
 
-&pcie {
-	status = "okay";
-};
-
 &pcie0 {
-	wifi@0,0 {
+	mt76@0,0 {
 		reg = <0x0000 0 0 0 0>;
 		mediatek,mtd-eeprom = <&factory 0x8000>;
-		mtd-mac-address = <&factory 0x2e>;
 		ieee80211-freq-limit = <5000000 6000000>;
+	};
+};
 
-		led {
-			led-sources = <2>;
-			led-active-low;
-		};
+&pcie1 {
+	mt76@0,0 {
+		reg = <0x0000 0 0 0 0>;
+		mediatek,mtd-eeprom = <&factory 0x0000>;
 	};
 };
