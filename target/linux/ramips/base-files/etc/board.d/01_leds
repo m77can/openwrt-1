@@ -201,7 +201,7 @@ hc5861)
 	ucidef_set_led_netdev "wifi2g" "wifi2g" "$boardname:blue:wlan2g" "wlan1"
 	;;
 360-p2)
-	set_wifi_led "$boardname:blue:wlan2g"
+	ucidef_set_led_wlan "wlan2g" "wlan2g" "$boardname:green:wlan2g" "phy0tpt"
 	;;
 hg255d)
 	set_wifi_led "$boardname:green:wlan"
