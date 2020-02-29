@@ -485,3 +485,11 @@ define Device/zyxel_keenetic-extra-ii
 	check-size $$$$(IMAGE_SIZE) | zyimage -d 6162 -v "ZyXEL Keenetic Extra II"
 endef
 TARGET_DEVICES += zyxel_keenetic-extra-ii
+
+define Device/360-p2
+  DTS := 360-P2
+  IMAGE_SIZE := $(ralink_default_fw_size_16M)
+  DEVICE_TITLE := ZREO 360-P2
+  DEVICE_PACKAGES := kmod-usb2 kmod-usb-ohci uboot-envtools kmod-usb-ledtrig-usbport
+endef
+TARGET_DEVICES += 360-p2
