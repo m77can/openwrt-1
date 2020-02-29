@@ -32,14 +32,6 @@
 			label = "360-p2:blue:system";
 			gpios = <&gpio1 5 GPIO_ACTIVE_LOW>;
 		};
-		wlan2g {
-			label = "360-p2:blue:wlan2g";
-			gpios = <&gpio1 12 GPIO_ACTIVE_LOW>;
-		};
-		wlan5g {
-			label = "360-p2:blue:wlan5g";
-			gpios = <&gpio1 8 GPIO_ACTIVE_LOW>;
-		};
 		usb {
 			label = "360-p2:blue:usb";
 			gpios = <&gpio1 14 GPIO_ACTIVE_LOW>;
