@@ -229,6 +229,9 @@ ramips_board_detect() {
 	*"HC5962")
 		name="hc5962"
 		;;
+	*"360-P2")
+		name="360-p2"	
+		;;
 	*"HG255D")
 		name="hg255d"
 		;;
