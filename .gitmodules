@@ -1,6 +1,0 @@
-[submodule "package/v2ray/luci-app-v2ray"]
-	path = package/v2ray/luci-app-v2ray
-	url = https://github.com/kuoruan/luci-app-v2ray.git
-[submodule "package/v2ray/openwrt-v2ray"]
-	path = package/v2ray/openwrt-v2ray
-	url = https://github.com/kuoruan/openwrt-v2ray.git
