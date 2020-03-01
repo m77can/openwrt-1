@@ -1,3 +1,0 @@
-[submodule "package/kcptun"]
-	path = package/kcptun
-	url = https://github.com/kuoruan/openwrt-kcptun.git
